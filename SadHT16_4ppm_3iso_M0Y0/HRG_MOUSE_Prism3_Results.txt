@@ -1,0 +1,22 @@
+		FFGYTPPK5	SPLVFGFcR6	SGYVFELLR7	SLQPEIQPFPQTASR8	ScPGKFESEFPQISK9	ScPGKFESEFPQISK10	ScPGKFESEFPQISKFFGYTPPK11	Data Set-H	Data Set-I	Data Set-J	Data Set-K	Data Set-L	Data Set-M	Data Set-N	Data Set-O	Data Set-P	Data Set-Q	Data Set-R	Data Set-S	Data Set-T	Data Set-U	Data Set-V	Data Set-W	Data Set-X	Data Set-Y	Data Set-Z	Data Set-AA	Data Set-AB	Data Set-AC	Data Set-AD	Data Set-AE	Data Set-AF	Data Set-AG	Data Set-AH	Data Set-AI	Data Set-AJ	Data Set-AK	Data Set-AL	Data Set-AM	Data Set-AN	Data Set-AO	Data Set-AP	Data Set-AQ	Data Set-AR	Data Set-AS	Data Set-AT	Data Set-AU	Data Set-AV	Data Set-AW	Data Set-AX	Data Set-AY	Data Set-AZ	Data Set-BA	Data Set-BB	Data Set-BC	Data Set-BD	Data Set-BE	Data Set-BF	Data Set-BG	Data Set-BH	Data Set-BI	Data Set-BJ	Data Set-BK	Data Set-BL	Data Set-BM	Data Set-BN	Data Set-BO	Data Set-BP	Data Set-BQ	Data Set-BR	Data Set-BS	Data Set-BT	Data Set-BU	Data Set-BV	Data Set-BW	Data Set-BX	Data Set-BY	Data Set-BZ	Data Set-CA	Data Set-CB	Data Set-CC	Data Set-CD	Data Set-CE	Data Set-CF	Data Set-CG	Data Set-CH	Data Set-CI	Data Set-CJ	Data Set-CK	Data Set-CL	Data Set-CM	Data Set-CN	Data Set-CO	Data Set-CP	Data Set-CQ	Data Set-CR	Data Set-CS	Data Set-CT	Data Set-CU	Data Set-CV	Data Set-CW	Data Set-CX	Data Set-CY	Data Set-CZ
+																																																																																																									
+One-phase association																																																																																																									
+Best-fit values																																																																																																									
+     Y0		0.4335	0.4764	0.4278	0.6061	0.6489	0.6508	0.7745																																																																																																	
+     PLATEAU		0.5373	0.6345	0.6654	0.8652	0.8563	0.8531	0.9085																																																																																																	
+     K		0.03021	0.02216	0.03222	0.03952	0.03759	0.03749	0.03334																																																																																																	
+     Tau		33.10	45.12	31.04	25.30	26.60	26.67	30.00																																																																																																	
+     Half-time		22.95	31.28	21.52	17.54	18.44	18.49	20.79																																																																																																	
+     Span		0.1039	0.1581	0.2376	0.2591	0.2074	0.2023	0.1341																																																																																																	
+Std. Error																																																																																																									
+     Y0		0.002497	0.005333	0.005908	0.001873	0.002063	0.002087	0.001939																																																																																																	
+     PLATEAU		0.002539	0.007178	0.005728	0.001593	0.001807	0.001831	0.001835																																																																																																	
+     K		0.002548	0.003068	0.002744	0.0009228	0.001223	0.001266	0.001632																																																																																																	
+     Span		0.003221	0.007831	0.007490	0.002276	0.002530	0.002561	0.002437																																																																																																	
+Goodness of Fit																																																																																																									
+     Degrees of Freedom		9	9	9	9	9	9	9																																																																																																	
+     R²		0.9917	0.9813	0.9913	0.9993	0.9987	0.9986	0.9971																																																																																																	
+Constraints																																																																																																									
+     K		K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0																																																																																																	
+Number of points																																																																																																									
+     Analyzed		12	12	12	12	12	12	12																																																																																																	

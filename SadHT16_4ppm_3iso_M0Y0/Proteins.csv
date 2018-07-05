@@ -1,0 +1,48 @@
+Accession,Protein,Length,HT16_0a_38,,HT16_0b_839,,HT16_8a_840,,HT16_8b_841,,HT16_24a_38,,HT16_24b_38,,HT16_48a_38,,HT16_48b_38,,HT16_96a_38,,HT16_96b_38,,HT16_168a_38,,HT16_168b_38,
+,,,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore,SCN,ProteinScore, SCN
+ALBU_MOUSE, Serum albumin OS=Mus musculus GN=Alb PE=1 SV=3, 608,20189.7, 615,19789.3, 594,17637.9, 550,19596.3, 602,20189.7, 615,20189.7, 615,20189.7, 615,20189.7, 615,20189.7, 615,20189.7, 615,20189.7, 615,20189.7, 615
+TRFE_MOUSE, Serotransferrin OS=Mus musculus GN=Tf PE=1 SV=1, 697,2818.0, 103,2338.4, 89,2032.3, 85,2014.1, 80,2818.0, 103,2818.0, 103,2818.0, 103,2818.0, 103,2818.0, 103,2818.0, 103,2818.0, 103,2818.0, 103
+FETUA_MOUSE, Alpha-2-HS-glycoprotein OS=Mus musculus GN=Ahsg PE=1 SV=1, 345,2361.4, 66,2235.5, 61,1756.7, 59,1554.1, 49,2361.4, 66,2361.4, 66,2361.4, 66,2361.4, 66,2361.4, 66,2361.4, 66,2361.4, 66,2361.4, 66
+PZP_MOUSE, Pregnancy zone protein OS=Mus musculus GN=Pzp PE=1 SV=3, 1495,1837.0, 58,1689.7, 55,1664.7, 52,1583.1, 55,1837.0, 58,1837.0, 58,1837.0, 58,1837.0, 58,1837.0, 58,1837.0, 58,1837.0, 58,1837.0, 58
+VTDB_MOUSE, Vitamin D-binding protein OS=Mus musculus GN=Gc PE=1 SV=2, 476,1486.7, 57,1549.3, 52,752.6, 34,715.6, 30,1486.7, 57,1486.7, 57,1486.7, 57,1486.7, 57,1486.7, 57,1486.7, 57,1486.7, 57,1486.7, 57
+HBA_MOUSE, Hemoglobin subunit alpha OS=Mus musculus GN=Hba PE=1 SV=2, 142,1157.9, 43,1109.0, 44,728.3, 28,851.3, 31,1157.9, 43,1157.9, 43,1157.9, 43,1157.9, 43,1157.9, 43,1157.9, 43,1157.9, 43,1157.9, 43
+KNG1_MOUSE, Kininogen-1 OS=Mus musculus GN=Kng1 PE=1 SV=1, 661,974.1, 35,1113.4, 38,832.9, 31,1012.1, 33,974.1, 35,974.1, 35,974.1, 35,974.1, 35,974.1, 35,974.1, 35,974.1, 35,974.1, 35
+CFAI_MOUSE, Complement factor I OS=Mus musculus GN=Cfi PE=1 SV=3, 603,807.6, 28,836.9, 29,717.0, 24,700.1, 27,807.6, 28,807.6, 28,807.6, 28,807.6, 28,807.6, 28,807.6, 28,807.6, 28,807.6, 28
+THRB_MOUSE, Prothrombin OS=Mus musculus GN=F2 PE=1 SV=1, 618,721.0, 25,557.3, 20,432.6, 16,451.2, 17,721.0, 25,721.0, 25,721.0, 25,721.0, 25,721.0, 25,721.0, 25,721.0, 25,721.0, 25
+MUG1_MOUSE, Murinoglobulin-1 OS=Mus musculus GN=Mug1 PE=1 SV=3, 1476,642.6, 20,525.3, 16,469.4, 13,537.3, 17,642.6, 20,642.6, 20,642.6, 20,642.6, 20,642.6, 20,642.6, 20,642.6, 20,642.6, 20
+APOH_MOUSE, Beta-2-glycoprotein 1 OS=Mus musculus GN=Apoh PE=1 SV=1, 345,635.4, 29,477.3, 21,506.2, 24,397.7, 20,635.4, 29,635.4, 29,635.4, 29,635.4, 29,635.4, 29,635.4, 29,635.4, 29,635.4, 29
+CPN2_MOUSE, Carboxypeptidase N subunit 2 OS=Mus musculus GN=Cpn2 PE=1 SV=2, 547,589.3, 12,817.4, 14,649.3, 11,533.3, 12,589.3, 12,589.3, 12,589.3, 12,589.3, 12,589.3, 12,589.3, 12,589.3, 12,589.3, 12
+APOA2_MOUSE, Apolipoprotein A-II OS=Mus musculus GN=Apoa2 PE=1 SV=2, 102,556.1, 21,542.3, 21,648.3, 25,532.9, 24,556.1, 21,556.1, 21,556.1, 21,556.1, 21,556.1, 21,556.1, 21,556.1, 21,556.1, 21
+AMBP_MOUSE, Protein AMBP OS=Mus musculus GN=Ambp PE=1 SV=2, 349,541.3, 14,565.0, 14,400.9, 11,392.2, 11,541.3, 14,541.3, 14,541.3, 14,541.3, 14,541.3, 14,541.3, 14,541.3, 14,541.3, 14
+HEMO_MOUSE, Hemopexin OS=Mus musculus GN=Hpx PE=1 SV=2, 460,538.7, 19,541.2, 22,291.4, 12,356.3, 13,538.7, 19,538.7, 19,538.7, 19,538.7, 19,538.7, 19,538.7, 19,538.7, 19,538.7, 19
+IGHM_MOUSE, Ig mu chain C region OS=Mus musculus GN=Ighm PE=1 SV=2, 454,439.5, 10,299.8, 6,420.3, 10,414.4, 11,439.5, 10,439.5, 10,439.5, 10,439.5, 10,439.5, 10,439.5, 10,439.5, 10,439.5, 10
+PLMN_MOUSE, Plasminogen OS=Mus musculus GN=Plg PE=1 SV=3, 812,426.8, 14,465.8, 14,294.0, 9,365.6, 13,426.8, 14,426.8, 14,426.8, 14,426.8, 14,426.8, 14,426.8, 14,426.8, 14,426.8, 14
+HRG_MOUSE, Histidine-rich glycoprotein OS=Mus musculus GN=Hrg PE=1 SV=2, 525,303.0, 13,393.2, 16,324.9, 13,286.5, 12,303.0, 13,303.0, 13,303.0, 13,303.0, 13,303.0, 13,303.0, 13,303.0, 13,303.0, 13
+PROP_MOUSE, Properdin OS=Mus musculus GN=Cfp PE=2 SV=2, 464,289.6, 6,206.8, 5,246.5, 8,213.6, 6,289.6, 6,289.6, 6,289.6, 6,289.6, 6,289.6, 6,289.6, 6,289.6, 6,289.6, 6
+CFAD_MOUSE, Complement factor D OS=Mus musculus GN=Cfd PE=1 SV=1, 259,285.6, 8,409.6, 10,273.5, 8,264.9, 7,285.6, 8,285.6, 8,285.6, 8,285.6, 8,285.6, 8,285.6, 8,285.6, 8,285.6, 8
+HBB1_MOUSE, Hemoglobin subunit beta-1 OS=Mus musculus GN=Hbb-b1 PE=1 SV=2, 147,274.0, 8,294.4, 8,237.8, 6,274.2, 6,274.0, 8,274.0, 8,274.0, 8,274.0, 8,274.0, 8,274.0, 8,274.0, 8,274.0, 8
+APOC3_MOUSE, Apolipoprotein C-III OS=Mus musculus GN=Apoc3 PE=1 SV=2, 99,250.0, 7,300.6, 7,237.2, 7,210.0, 7,250.0, 7,250.0, 7,250.0, 7,250.0, 7,250.0, 7,250.0, 7,250.0, 7,250.0, 7
+SPA3K_MOUSE, Serine protease inhibitor A3K OS=Mus musculus GN=Serpina3k PE=1 SV=2, 418,229.1, 4,202.3, 4,127.8, 2,143.9, 3,229.1, 4,229.1, 4,229.1, 4,229.1, 4,229.1, 4,229.1, 4,229.1, 4,229.1, 4
+APOA1_MOUSE, Apolipoprotein A-I OS=Mus musculus GN=Apoa1 PE=1 SV=2, 264,222.9, 7,238.9, 8,437.4, 14,538.6, 16,222.9, 7,222.9, 7,222.9, 7,222.9, 7,222.9, 7,222.9, 7,222.9, 7,222.9, 7
+CFAH_MOUSE, Complement factor H OS=Mus musculus GN=Cfh PE=1 SV=2, 1234,219.1, 9,173.1, 8,139.7, 8,100.3, 5,219.1, 9,219.1, 9,219.1, 9,219.1, 9,219.1, 9,219.1, 9,219.1, 9,219.1, 9
+VTNC_MOUSE, Vitronectin OS=Mus musculus GN=Vtn PE=1 SV=2, 478,188.3, 6,171.9, 7, 86.0, 3,171.5, 7,188.3, 6,188.3, 6,188.3, 6,188.3, 6,188.3, 6,188.3, 6,188.3, 6,188.3, 6
+EGFR_MOUSE, Epidermal growth factor receptor OS=Mus musculus GN=Egfr PE=1 SV=1, 1210,167.5, 6,215.2, 6,114.6, 5,134.1, 4,167.5, 6,167.5, 6,167.5, 6,167.5, 6,167.5, 6,167.5, 6,167.5, 6,167.5, 6
+CO3_MOUSE, Complement C3 OS=Mus musculus GN=C3 PE=1 SV=3, 1663,153.2, 11,180.7, 12,178.1, 12,136.3, 11,153.2, 11,153.2, 11,153.2, 11,153.2, 11,153.2, 11,153.2, 11,153.2, 11,153.2, 11
+CFAB_MOUSE, Complement factor B OS=Mus musculus GN=Cfb PE=1 SV=2, 761,152.7, 5,227.4, 8,135.2, 4,179.3, 5,152.7, 5,152.7, 5,152.7, 5,152.7, 5,152.7, 5,152.7, 5,152.7, 5,152.7, 5
+CO8A_MOUSE, Complement component C8 alpha chain OS=Mus musculus GN=C8a PE=1 SV=1, 587,135.7, 4,196.3, 6, 41.6, 1,104.5, 3,135.7, 4,135.7, 4,135.7, 4,135.7, 4,135.7, 4,135.7, 4,135.7, 4,135.7, 4
+CD5L_MOUSE, CD5 antigen-like OS=Mus musculus GN=Cd5l PE=1 SV=3, 352,127.3, 3,194.9, 5,193.1, 5,195.3, 5,127.3, 3,127.3, 3,127.3, 3,127.3, 3,127.3, 3,127.3, 3,127.3, 3,127.3, 3
+FIBA_MOUSE, Fibrinogen alpha chain OS=Mus musculus GN=Fga PE=1 SV=1, 789,123.0, 5,124.9, 5,106.5, 4, 93.1, 3,123.0, 5,123.0, 5,123.0, 5,123.0, 5,123.0, 5,123.0, 5,123.0, 5,123.0, 5
+FETUB_MOUSE, Fetuin-B OS=Mus musculus GN=Fetub PE=1 SV=1, 388,119.4, 4,110.3, 5, 31.1, 1,0.0, 0,119.4, 4,119.4, 4,119.4, 4,119.4, 4,119.4, 4,119.4, 4,119.4, 4,119.4, 4
+CO4B_MOUSE, Complement C4-B OS=Mus musculus GN=C4b PE=1 SV=3, 1738,110.7, 2,141.7, 3, 84.3, 2, 71.9, 1,110.7, 2,110.7, 2,110.7, 2,110.7, 2,110.7, 2,110.7, 2,110.7, 2,110.7, 2
+SEPP1_MOUSE, Selenoprotein P OS=Mus musculus GN=Sepp1 PE=1 SV=3, 380, 98.7, 5, 65.0, 4, 55.8, 3, 88.0, 4, 98.7, 5, 98.7, 5, 98.7, 5, 98.7, 5, 98.7, 5, 98.7, 5, 98.7, 5, 98.7, 5
+ANT3_MOUSE, Antithrombin-III OS=Mus musculus GN=Serpinc1 PE=1 SV=1, 465, 96.2, 4,109.0, 6, 61.9, 4, 98.1, 6, 96.2, 4, 96.2, 4, 96.2, 4, 96.2, 4, 96.2, 4, 96.2, 4, 96.2, 4, 96.2, 4
+ICA_MOUSE, Inhibitor of carbonic anhydrase OS=Mus musculus GN=Ica PE=1 SV=1, 700, 91.3, 3, 93.8, 4, 81.3, 3, 84.6, 3, 91.3, 3, 91.3, 3, 91.3, 3, 91.3, 3, 91.3, 3, 91.3, 3, 91.3, 3, 91.3, 3
+ITIH3_MOUSE, Inter-alpha-trypsin inhibitor heavy chain H3 OS=Mus musculus GN=Itih3 PE=1 SV=3, 889, 90.4, 2,104.9, 4, 41.7, 1, 45.7, 1, 90.4, 2, 90.4, 2, 90.4, 2, 90.4, 2, 90.4, 2, 90.4, 2, 90.4, 2, 90.4, 2
+CO8B_MOUSE, Complement component C8 beta chain OS=Mus musculus GN=C8b PE=1 SV=1, 589, 78.7, 4, 70.8, 3, 32.5, 1,0.0, 0, 78.7, 4, 78.7, 4, 78.7, 4, 78.7, 4, 78.7, 4, 78.7, 4, 78.7, 4, 78.7, 4
+B2MG_MOUSE, Beta-2-microglobulin OS=Mus musculus GN=B2m PE=1 SV=2, 119, 70.2, 4, 50.1, 2, 46.1, 2, 36.9, 1, 70.2, 4, 70.2, 4, 70.2, 4, 70.2, 4, 70.2, 4, 70.2, 4, 70.2, 4, 70.2, 4
+APOE_MOUSE, Apolipoprotein E OS=Mus musculus GN=Apoe PE=1 SV=2, 311, 47.0, 1, 89.4, 3,0.0, 0,0.0, 0, 47.0, 1, 47.0, 1, 47.0, 1, 47.0, 1, 47.0, 1, 47.0, 1, 47.0, 1, 47.0, 1
+ITIH4_MOUSE, Inter alpha-trypsin inhibitor heavy chain 4 OS=Mus musculus GN=Itih4 PE=1 SV=2, 942,0.0, 0, 66.8, 3, 75.2, 3, 68.7, 2,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0
+IGJ_MOUSE, Immunoglobulin J chain OS=Mus musculus GN=Jchain PE=1 SV=4, 159, 42.4, 2, 63.2, 3, 46.1, 1, 49.4, 2, 42.4, 2, 42.4, 2, 42.4, 2, 42.4, 2, 42.4, 2, 42.4, 2, 42.4, 2, 42.4, 2
+FINC_MOUSE, Fibronectin OS=Mus musculus GN=Fn1 PE=1 SV=4, 2477, 37.0, 1, 29.9, 1,134.4, 4, 45.6, 1, 37.0, 1, 37.0, 1, 37.0, 1, 37.0, 1, 37.0, 1, 37.0, 1, 37.0, 1, 37.0, 1
+PROZ_MOUSE, Vitamin K-dependent protein Z OS=Mus musculus GN=Proz PE=1 SV=1, 399, 37.5, 1,0.0, 0, 46.0, 2, 75.0, 2, 37.5, 1, 37.5, 1, 37.5, 1, 37.5, 1, 37.5, 1, 37.5, 1, 37.5, 1, 37.5, 1
+IGHG3_MOUSE, Ig gamma-3 chain C region OS=Mus musculus PE=1 SV=2, 398,0.0, 0,0.0, 0,0.0, 0, 57.3, 3,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0,0.0, 0

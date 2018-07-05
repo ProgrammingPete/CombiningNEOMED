@@ -1,0 +1,13 @@
+Peptides, PeptideUnique, RateConstants, Correlations, RootMeanRSS, AbsoluteIsotopeError
+QYLPALK, Yes, 0.00829, 0.956895, 0.027209, 0.067236
+SQLQEAPPEWK, Yes, 0.01515, 0.983621, 0.021831, 0.087359
+MSPVPDLVPGSFK, Yes, 0.00746, 0.968445, 0.019392, 0.078814
+SQLQEAPPEWKALTEMR, Yes, 0.01649, 0.982532, 0.019022, 0.050943
+
+
+MeanRateConst/CorrCutOff, 0.011848, 0.900000
+
+
+MedianRateConst/RMSSCutOff, 0.015152, 0.050000
+StandDev/NumberPeptides, 0.004632, 4
+TotalIonCurrent, 2.92111e+09

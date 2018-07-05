@@ -1,0 +1,5 @@
+Peptides, PeptideUnique, RateConstants, Correlations, RootMeanRSS, AbsoluteIsotopeError
+GWMDNHFR, Yes, 0.39575, 0.882233, 0.101225, 0.921133
+TVQDALSSVQESDIAVVAR, Yes, 0.05947, 0.992965, 0.018548, 0.061859
+TVQDALSSVQESDIAVVAR, Yes, 0.00000, -2.000000, 0.291103, 0.108741
+TotalIonCurrent, 3.26058e+09

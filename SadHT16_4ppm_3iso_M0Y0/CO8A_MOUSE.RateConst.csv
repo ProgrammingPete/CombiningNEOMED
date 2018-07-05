@@ -1,0 +1,13 @@
+Peptides, PeptideUnique, RateConstants, Correlations, RootMeanRSS, AbsoluteIsotopeError
+TVIEGLKDFK, Yes, 0.02801, 0.981683, 0.021922, 0.188220
+ALDQYLMEFNAcR, Yes, 0.04039, 0.974057, 0.027706, 0.097331
+AALGYNILTQEEAQSVYDAK, Yes, 0.03506, 0.998560, 0.015636, 0.089144
+AVTPQAVScQLSDWYKWTDcFPcQDKKYR, Yes, 0.02996, 0.995970, 0.004378, 0.025722
+
+
+MeanRateConst/CorrCutOff, 0.033356, 0.900000
+
+
+MedianRateConst/RMSSCutOff, 0.035063, 0.050000
+StandDev/NumberPeptides, 0.005550, 4
+TotalIonCurrent, 1.33456e+09

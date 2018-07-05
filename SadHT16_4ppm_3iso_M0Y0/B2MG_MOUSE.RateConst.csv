@@ -1,0 +1,4 @@
+Peptides, PeptideUnique, RateConstants, Correlations, RootMeanRSS, AbsoluteIsotopeError
+TVYWDRDM, Yes, 0.04344, 0.975219, 0.021646, 0.069196
+HASMAEPKTVYWDRDM, Yes, 0.35604, 0.992323, 0.054363, 0.502452
+TotalIonCurrent, 3.57723e+09
