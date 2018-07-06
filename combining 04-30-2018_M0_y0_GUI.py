@@ -5,7 +5,7 @@ from tkinter import *
 import tkinter.font
 import tkinter.filedialog 
 
-#globals. will ecapsulate these variables as soon as I find out how to
+#globals. will encapsulate these variables as soon as I find out how to
 protein_data = []
 row_counter = 1
 selection = '2'
@@ -32,8 +32,7 @@ def gui_selection():
     R4 = Radiobutton(window, text="4. To calculate FSR from two time points.", variable=var, font= TimesNewRoman, value='4')
     R4.pack(anchor = W)
     
-    #event. After destruction of the window, the program will jump back to main()
-    
+    #event. After destruction of the window, the program will jump back to main()    
     def bttnPressed():
         selection = var.get()
         window.destroy()
@@ -46,23 +45,27 @@ def gui_selection():
     
     window.mainloop()
 
-def gui_select2():
+def get_dirname():
+    Tk().withdraw()
+    print("Please select a directory.")
+    folder_name = tkinter.filedialog.askdirectory(initialdir = os.getcwd(), title= "Please select a directory:")
+    print("You choice is %s" % folder_name)
+    return folder_name
     
-    select2 = Tk()
+
+def get_timepoints():
+    timepoints = Tk()
+    var = StringVar()
+    textbox = Entry(timepoints, textvariable = var)
+    textbox.pack(anchor = W)
     
+    labl = Label(timepoints, text = 'Please enter the timepoints separated by commas without any letters, I.e "0,0,8,8,24,....": ',)
+    labl.pack(anchor = W)
+
+    var.set("0,0,0")
+    strg = var.get()
     
-    def bttn1_pressed():
-        folder_name = tkinter.filedialog.askdirectory()
-        return folder_name
-        select2.destroy()
-        
-    label1 = Label(select2, text = "1. Please make sure that the folder selected contains")
-    label1.pack(anchor = W)
-    bttn1 = Button(select2, text= "Select Folder", command = bttn1_pressed)
-    bttn1.pack(anchor = W)
-    
-    select2.mainloop()
-     
+    return strg 
     
     
 def prompt():
@@ -1676,13 +1679,17 @@ def main():
         write_file_sadygov(data_list, folder_name)
         print(len(data_list)-1, 'Proteins were found.')
     elif selection == '2':
-        folder_name = gui_select2();
-
+        folder_name = get_dirname();
+        #each data field will get their own method
+        time_points = get_timepoints();
+        prism_input = '1'
+        unique = 'yes'
+        
         #folder_name, time_points, unique, prism_input = prompt_tl() 
-        #if unique == 'no':
-        #    file_name = read_file(folder_name, time_points,prism_input)
-        #elif unique == 'yes':
-        #    file_name = read_file_unique(folder_name, time_points, prism_input)
+        if unique == 'no':
+            file_name = read_file(folder_name, time_points,prism_input)
+        elif unique == 'yes':
+            file_name = read_file_unique(folder_name, time_points, prism_input)
 
         create_prism_script(folder_name, prism_input)
         prism_path = find_prism()
