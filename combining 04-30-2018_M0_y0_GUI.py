@@ -9,7 +9,9 @@ import tkinter.filedialog
 protein_data = []
 row_counter = 1
 selection = '2'
-folder_name = " "
+time_points_string = ''
+unique = "no"
+prism_input = '3'
 
 
 
@@ -17,12 +19,14 @@ def gui_selection():
     #creation of window with font
     window = Tk("This is a test")
     TimesNewRoman  = tkinter.font.Font(family= "Times New Roman", size = 12)
+       
     #label
     labl = Label(window, text = "Please select an Option for Calculation (Default is 2). ",font= tkinter.font.Font(family= "Times New Roman", size = 14, weight ='bold'))
     labl.pack()
 
     #radiobuttons 
     var = StringVar()
+    var.set('2')
     R1 = Radiobutton(window, text="1. Organize Sadygov Rate Constants only.", variable=var , font= TimesNewRoman, value='1')
     R1.pack(anchor = W)
     R2 = Radiobutton(window, text="2. Calculate rate constants using Prism.", variable=var, font= TimesNewRoman, value='2')
@@ -34,38 +38,71 @@ def gui_selection():
     
     #event. After destruction of the window, the program will jump back to main()    
     def bttnPressed():
+        global selection
         selection = var.get()
         window.destroy()
+        window.quit()
     
-    #if button is pressed, return var
+    #if button is pressed, return selection is assigned current var value
     bttn = Button(window, text= "Continue with Selection", command = bttnPressed,font= tkinter.font.Font(family= "Times New Roman", size = 14, weight ='bold'))
-    bttn.pack(anchor = W)
-
-     
-    
+    bttn.pack(anchor = W)   
     window.mainloop()
 
 def get_dirname():
     Tk().withdraw()
     print("Please select a directory.")
     folder_name = tkinter.filedialog.askdirectory(initialdir = os.getcwd(), title= "Please select a directory:")
+    folder_name = check_directory(folder_name)
     print("You choice is %s" % folder_name)
     return folder_name
     
-
-def get_timepoints():
-    timepoints = Tk()
-    var = StringVar()
-    textbox = Entry(timepoints, textvariable = var)
-    textbox.pack(anchor = W)
+#This window is for input of timepoints, unique, and prism_input
+def get_data():
     
-    labl = Label(timepoints, text = 'Please enter the timepoints separated by commas without any letters, I.e "0,0,8,8,24,....": ',)
+    data  = Tk("Get Data")
+    TimesNewRoman  = tkinter.font.Font(family= "Times New Roman", size = 12)    
+    var = StringVar()
+    var.set('3')
+    var2 = StringVar()
+    var2.set('no')
+    var3 = StringVar()
+    var3.set('0,0,8,8,8,24,24,24,48,48,48,96,96,168,168')
+    labl = Label(data, font = TimesNewRoman,  text = 'Please enter the timepoints separated by commas without any letters, I.e "0,0,8,8,24,....": ',)
     labl.pack(anchor = W)
 
-    var.set("0,0,0")
-    strg = var.get()
+    def get_points():
+        global time_points_string
+        global prism_input
+        global unique
+        time_points_string = var3.get()
+        prism_input = var.get()
+        unique = var2.get()
+        data.destroy()
+        data.quit()
     
-    return strg 
+    textbox = Entry(data, textvariable= var3,  font = TimesNewRoman)
+    textbox.pack(anchor = W)
+
+    labl2 = Label(data,font = TimesNewRoman,  text = 'Please select which isotopomer you would like to use to calculate the rate constant.')
+    labl2.pack(anchor = W)
+
+    #for prism_input
+    MODES = [('1. I1', '1'),('2. I2', '2'),('3. I3', '3'),('4. I4', '4'),('5. I5', '5'),]    
+    for text, mode in MODES:
+        R = Radiobutton(data, text=text, variable = var, value = mode, font = TimesNewRoman)
+        R.pack(anchor = W)
+
+    #for unique    
+    labl3 = Label(data, text = 'Select Yes to use unique Proteins, Select No to use All Proteins',font = TimesNewRoman) 
+    labl3.pack(anchor = W)
+    Ryes = Radiobutton(data,  text="YES", variable = var2, value = 'yes',indicatoron = 0)
+    Rno = Radiobutton(data,  text="NO", variable = var2, value = 'no',indicatoron = 0)
+    Ryes.pack(anchor =W )
+    Rno.pack(anchor =W )
+    
+    bttn = Button(data, text= "Continue with Entered Data and Quit ", command = get_points)
+    bttn.pack(anchor = W)
+    data.mainloop()
     
     
 def prompt():
@@ -105,8 +142,9 @@ def check_directory_sadygov(folder_name):
         print('\n')
         print('This directory either does not exist or is mispelled.')
         print('Please enter the path of the folder that contains your files. I.e C:\Kasumov_lab\Andrew\Data_Folder')
-        folder_name = input('Folder Path: ').strip()
+        folder_name = get_dirname()
     return folder_name
+
 def read_file_sadygov(folder_name):
     data_list = [['Protein','Rate Constant']]
     for file_name in os.listdir(folder_name):
@@ -203,7 +241,7 @@ def check_directory(folder_name):
         print('\n')
         print('This directory either does not exist, is mispelled, or contains a space.')
         print('Please enter the path of the folder that contains your files. I.e C:\Kasumov_lab\Andrew\Data_Folder')
-        folder_name = input('Folder Path: ').strip()
+        folder_name = get_dirname()
     return folder_name
 def check_input(unique):
     if unique == 'no' or unique == 'yes':
@@ -596,6 +634,7 @@ def write_data(peptides_list, length_of_peptides_list, length_of_time_point_list
             counter_for_peptides_list -= 1
             for rowx in range(counter_for_rows, counter_for_rows + length_of_time_point_list):
                     cell_name = get_column_letter(colx) + str(rowx)
+                    #error is here
                     ws1[cell_name] = times_list_no_letters[counter_for_times_list_no_letters]
                     counter_for_times_list_no_letters += 1
         else:
@@ -1670,7 +1709,7 @@ def calculate_N(sequence):
     N = "{0:.2f}".format(N)
     return N
 
-def main():
+def main():   
     gui_selection()
     #selection = prompt()
     if selection == '1':
@@ -1680,16 +1719,16 @@ def main():
         print(len(data_list)-1, 'Proteins were found.')
     elif selection == '2':
         folder_name = get_dirname();
-        #each data field will get their own method
-        time_points = get_timepoints();
-        prism_input = '1'
-        unique = 'yes'
+        get_data();
         
+        global time_points_string
+        global prism_input
+        global unique        
         #folder_name, time_points, unique, prism_input = prompt_tl() 
         if unique == 'no':
-            file_name = read_file(folder_name, time_points,prism_input)
+            file_name = read_file(folder_name, time_points_string,prism_input)
         elif unique == 'yes':
-            file_name = read_file_unique(folder_name, time_points, prism_input)
+            file_name = read_file_unique(folder_name, time_points_string, prism_input)
 
         create_prism_script(folder_name, prism_input)
         prism_path = find_prism()
