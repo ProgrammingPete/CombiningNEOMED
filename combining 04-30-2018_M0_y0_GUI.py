@@ -78,7 +78,7 @@ def get_data():
         global unique
         time_points_string = textbox.get("1.0", "end-1c")
         prism_input = textbox_intensity.get("1.0", "end-1c")
-        unique = textbox_UNIQUE.get("1.0", "end-1c").get("1.0", "end-1c")
+        unique = textbox_UNIQUE.get("1.0", "end-1c")
         data.destroy()
         data.quit()    
     
@@ -94,7 +94,7 @@ def get_data():
     
     labl2 = Label(data,font = TimesNewRoman,  text = 'Please select which isotopomer you would like to use to calculate the rate constant.')
     labl2.pack(anchor = W)
-    labl3 = Label(data,font = TimesNewRoman,  text = 'Please select which isotopomer you would like to use to calculate the rate constant.')
+    labl3 = Label(data,font = TimesNewRoman,  text = 'Enter "1" for I1,"2" for I2,"3" for I3,"4" for I5')
     labl3.pack(anchor = W)
 
 
@@ -103,17 +103,17 @@ def get_data():
     #for text, mode in MODES:
     #    R = Radiobutton(data, text=text, variable = var, value = mode, font = TimesNewRoman)
     #    R.pack(anchor = W)
-    textbox_intensity = Text(data, height=1, width=30,  font = TimesNewRoman)
+    textbox_intensity = Text(data, height=1, width=1,  font = TimesNewRoman)
     textbox_intensity.pack(anchor = W)
 
     #for unique    
-    labl3 = Label(data, text = 'Select Yes to use unique Proteins, Select No to use All Proteins',font = TimesNewRoman) 
+    labl3 = Label(data, text = 'Type "yes" to use unique Proteins, Type "no" to use All Proteins',font = TimesNewRoman) 
     labl3.pack(anchor = W)
     #Ryes = Radiobutton(data,  text="YES", variable = var2, value = 'yes',indicatoron = 0)
     #Rno = Radiobutton(data,  text="NO", variable = var2, value = 'no',indicatoron = 0)
     #Ryes.pack(anchor =W )
     #Rno.pack(anchor =W )
-    textbox_UNIQUE = Text(data, height=1, width=30,  font = TimesNewRoman)
+    textbox_UNIQUE = Text(data, height=1, width=3,  font = TimesNewRoman)
     textbox_UNIQUE.pack(anchor = W)
     
    # bttn2 = Button(data, text= "PRess this after choose an I level as well as using Unique protiens", command=lambda: var2.get())    
