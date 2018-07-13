@@ -45,7 +45,11 @@ def gui_selection():
     
     #if button is pressed, return selection is assigned current var value
     bttn = Button(window, text= "Continue with Selection", command = bttnPressed,font= tkinter.font.Font(family= "Times New Roman", size = 14, weight ='bold'))
-    bttn.pack(anchor = W)   
+    bttn.pack(anchor = W)
+
+
+
+    
     window.mainloop()
 
 def get_dirname():
@@ -60,13 +64,26 @@ def get_dirname():
 def get_data():
     
     data  = Tk("Get Data")
+
+    def get_points():
+        global time_points_string
+        global prism_input
+        global unique
+        time_points_string = textbox.get("1.0", "end-1c")
+        prism_input = var.get()
+        unique = var2.get()
+        data.destroy()
+        data.quit()
+        
     TimesNewRoman  = tkinter.font.Font(family= "Times New Roman", size = 12)    
     var = StringVar()
-    var.set('3')
+    # var.set('3')
     var2 = StringVar()
-    var2.set('no')
+   # var2.set('no')
     
+        
     #var3.set('0,0,8,8,24,24,48,48,96,96,168,168')
+        #creation of the label
     labl = Label(data, font = TimesNewRoman,  text = 'Please enter the timepoints separated by commas without any letters, I.e "0,0,8,8,24,....": ',)
     labl.pack(anchor = W)
     
@@ -92,17 +109,8 @@ def get_data():
     Rno.pack(anchor =W )
     
     bttn = Button(data, text= "Continue with Entered Data and Quit ", command = get_points)
-    bttn.pack(anchor = W)
+    bttn.pack(anchor = W)   
     
-    def get_points():
-        global time_points_string
-        global prism_input
-        global unique
-        time_points_string = textbox.get("1.0", "end-1c")
-        prism_input = var.get()
-        unique = var2.get()
-        data.destroy()
-        data.quit()
         
     data.mainloop()
     
