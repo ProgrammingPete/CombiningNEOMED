@@ -65,21 +65,22 @@ def get_data():
     
     data  = Tk("Get Data")
 
+
+    TimesNewRoman  = tkinter.font.Font(family= "Times New Roman", size = 12)    
+    var = StringVar()
+    var.set('3')
+    var2 = StringVar()
+    var2.set('no')
+    
     def get_points():
         global time_points_string
         global prism_input
         global unique
         time_points_string = textbox.get("1.0", "end-1c")
-        prism_input = var.get()
-        unique = var2.get()
+        prism_input = textbox_intensity.get("1.0", "end-1c")
+        unique = textbox_UNIQUE.get("1.0", "end-1c").get("1.0", "end-1c")
         data.destroy()
-        data.quit()
-        
-    TimesNewRoman  = tkinter.font.Font(family= "Times New Roman", size = 12)    
-    var = StringVar()
-    # var.set('3')
-    var2 = StringVar()
-   # var2.set('no')
+        data.quit()    
     
         
     #var3.set('0,0,8,8,24,24,48,48,96,96,168,168')
@@ -93,20 +94,30 @@ def get_data():
     
     labl2 = Label(data,font = TimesNewRoman,  text = 'Please select which isotopomer you would like to use to calculate the rate constant.')
     labl2.pack(anchor = W)
+    labl3 = Label(data,font = TimesNewRoman,  text = 'Please select which isotopomer you would like to use to calculate the rate constant.')
+    labl3.pack(anchor = W)
+
 
     #for prism_input
-    MODES = [('1. I1', '1'),('2. I2', '2'),('3. I3', '3'),('4. I4', '4'),('5. I5', '5'),]    
-    for text, mode in MODES:
-        R = Radiobutton(data, text=text, variable = var, value = mode, font = TimesNewRoman)
-        R.pack(anchor = W)
+    #MODES = [('1. I1', '1'),('2. I2', '2'),('3. I3', '3'),('4. I4', '4'),('5. I5', '5'),]    
+    #for text, mode in MODES:
+    #    R = Radiobutton(data, text=text, variable = var, value = mode, font = TimesNewRoman)
+    #    R.pack(anchor = W)
+    textbox_intensity = Text(data, height=1, width=30,  font = TimesNewRoman)
+    textbox_intensity.pack(anchor = W)
 
     #for unique    
     labl3 = Label(data, text = 'Select Yes to use unique Proteins, Select No to use All Proteins',font = TimesNewRoman) 
     labl3.pack(anchor = W)
-    Ryes = Radiobutton(data,  text="YES", variable = var2, value = 'yes',indicatoron = 0)
-    Rno = Radiobutton(data,  text="NO", variable = var2, value = 'no',indicatoron = 0)
-    Ryes.pack(anchor =W )
-    Rno.pack(anchor =W )
+    #Ryes = Radiobutton(data,  text="YES", variable = var2, value = 'yes',indicatoron = 0)
+    #Rno = Radiobutton(data,  text="NO", variable = var2, value = 'no',indicatoron = 0)
+    #Ryes.pack(anchor =W )
+    #Rno.pack(anchor =W )
+    textbox_UNIQUE = Text(data, height=1, width=30,  font = TimesNewRoman)
+    textbox_UNIQUE.pack(anchor = W)
+    
+   # bttn2 = Button(data, text= "PRess this after choose an I level as well as using Unique protiens", command=lambda: var2.get())    
+    #bttn2.pack(anchor = W)
     
     bttn = Button(data, text= "Continue with Entered Data and Quit ", command = get_points)
     bttn.pack(anchor = W)   
