@@ -20,3 +20,47 @@ Constraints
      K		K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0																																																																																																		
 Number of points																																																																																																									
      Analyzed		12	11	12	11	12	12																																																																																																		
+		TGEQVTFR5	STGIEAIKPK6	cTPTGWIPVPR7	cVATDQLEKcR8	VLKSTGIEAIKPK9	cIEKIPcSQPPTIEHGSINLPR10	Data Set-G	Data Set-H	Data Set-I	Data Set-J	Data Set-K	Data Set-L	Data Set-M	Data Set-N	Data Set-O	Data Set-P	Data Set-Q	Data Set-R	Data Set-S	Data Set-T	Data Set-U	Data Set-V	Data Set-W	Data Set-X	Data Set-Y	Data Set-Z	Data Set-AA	Data Set-AB	Data Set-AC	Data Set-AD	Data Set-AE	Data Set-AF	Data Set-AG	Data Set-AH	Data Set-AI	Data Set-AJ	Data Set-AK	Data Set-AL	Data Set-AM	Data Set-AN	Data Set-AO	Data Set-AP	Data Set-AQ	Data Set-AR	Data Set-AS	Data Set-AT	Data Set-AU	Data Set-AV	Data Set-AW	Data Set-AX	Data Set-AY	Data Set-AZ	Data Set-BA	Data Set-BB	Data Set-BC	Data Set-BD	Data Set-BE	Data Set-BF	Data Set-BG	Data Set-BH	Data Set-BI	Data Set-BJ	Data Set-BK	Data Set-BL	Data Set-BM	Data Set-BN	Data Set-BO	Data Set-BP	Data Set-BQ	Data Set-BR	Data Set-BS	Data Set-BT	Data Set-BU	Data Set-BV	Data Set-BW	Data Set-BX	Data Set-BY	Data Set-BZ	Data Set-CA	Data Set-CB	Data Set-CC	Data Set-CD	Data Set-CE	Data Set-CF	Data Set-CG	Data Set-CH	Data Set-CI	Data Set-CJ	Data Set-CK	Data Set-CL	Data Set-CM	Data Set-CN	Data Set-CO	Data Set-CP	Data Set-CQ	Data Set-CR	Data Set-CS	Data Set-CT	Data Set-CU	Data Set-CV	Data Set-CW	Data Set-CX	Data Set-CY	Data Set-CZ
+																																																																																																									
+One-phase association																																																																																																									
+Best-fit values																																																																																																									
+     Y0		0.2888	0.4260	0.6008	0.5274	0.4962	0.7357																																																																																																		
+     PLATEAU		0.6025	0.6755	0.9016	0.8025	0.6697	0.8460																																																																																																		
+     K		0.07660	0.04660	0.003025	0.04318	0.07919	0.04179																																																																																																		
+     Tau		13.05	21.46	330.6	23.16	12.63	23.93																																																																																																		
+     Half-time		9.049	14.87	229.1	16.05	8.753	16.59																																																																																																		
+     Span		0.3137	0.2495	0.3008	0.2751	0.1735	0.1103																																																																																																		
+Std. Error																																																																																																									
+     Y0		0.09663	0.004503	0.01577	0.009252	0.07118	0.01893																																																																																																		
+     PLATEAU		0.06093	0.004046	0.7160	0.008722	0.04437	0.01560																																																																																																		
+     K		0.07087	0.002789	0.009177	0.004905	0.09751	0.02289																																																																																																		
+     Span		0.1097	0.005595	0.7075	0.01169	0.08070	0.02280																																																																																																		
+Goodness of Fit																																																																																																									
+     Degrees of Freedom		9	8	9	8	9	9																																																																																																		
+     R²		0.4772	0.9960	0.7155	0.9860	0.3403	0.7228																																																																																																		
+Constraints																																																																																																									
+     K		K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0																																																																																																		
+Number of points																																																																																																									
+     Analyzed		12	11	12	11	12	12																																																																																																		
+		TGEQVTFR5	STGIEAIKPK6	cTPTGWIPVPR7	cVATDQLEKcR8	VLKSTGIEAIKPK9	cIEKIPcSQPPTIEHGSINLPR10	Data Set-G	Data Set-H	Data Set-I	Data Set-J	Data Set-K	Data Set-L	Data Set-M	Data Set-N	Data Set-O	Data Set-P	Data Set-Q	Data Set-R	Data Set-S	Data Set-T	Data Set-U	Data Set-V	Data Set-W	Data Set-X	Data Set-Y	Data Set-Z	Data Set-AA	Data Set-AB	Data Set-AC	Data Set-AD	Data Set-AE	Data Set-AF	Data Set-AG	Data Set-AH	Data Set-AI	Data Set-AJ	Data Set-AK	Data Set-AL	Data Set-AM	Data Set-AN	Data Set-AO	Data Set-AP	Data Set-AQ	Data Set-AR	Data Set-AS	Data Set-AT	Data Set-AU	Data Set-AV	Data Set-AW	Data Set-AX	Data Set-AY	Data Set-AZ	Data Set-BA	Data Set-BB	Data Set-BC	Data Set-BD	Data Set-BE	Data Set-BF	Data Set-BG	Data Set-BH	Data Set-BI	Data Set-BJ	Data Set-BK	Data Set-BL	Data Set-BM	Data Set-BN	Data Set-BO	Data Set-BP	Data Set-BQ	Data Set-BR	Data Set-BS	Data Set-BT	Data Set-BU	Data Set-BV	Data Set-BW	Data Set-BX	Data Set-BY	Data Set-BZ	Data Set-CA	Data Set-CB	Data Set-CC	Data Set-CD	Data Set-CE	Data Set-CF	Data Set-CG	Data Set-CH	Data Set-CI	Data Set-CJ	Data Set-CK	Data Set-CL	Data Set-CM	Data Set-CN	Data Set-CO	Data Set-CP	Data Set-CQ	Data Set-CR	Data Set-CS	Data Set-CT	Data Set-CU	Data Set-CV	Data Set-CW	Data Set-CX	Data Set-CY	Data Set-CZ
+																																																																																																									
+One-phase association																																																																																																									
+Best-fit values																																																																																																									
+     Y0		0.2888	0.4260	0.6008	0.5274	0.4962	0.7357																																																																																																		
+     PLATEAU		0.6025	0.6755	0.9016	0.8025	0.6697	0.8460																																																																																																		
+     K		0.07660	0.04660	0.003025	0.04318	0.07919	0.04179																																																																																																		
+     Tau		13.05	21.46	330.6	23.16	12.63	23.93																																																																																																		
+     Half-time		9.049	14.87	229.1	16.05	8.753	16.59																																																																																																		
+     Span		0.3137	0.2495	0.3008	0.2751	0.1735	0.1103																																																																																																		
+Std. Error																																																																																																									
+     Y0		0.09663	0.004503	0.01577	0.009252	0.07118	0.01893																																																																																																		
+     PLATEAU		0.06093	0.004046	0.7160	0.008722	0.04437	0.01560																																																																																																		
+     K		0.07087	0.002789	0.009177	0.004905	0.09751	0.02289																																																																																																		
+     Span		0.1097	0.005595	0.7075	0.01169	0.08070	0.02280																																																																																																		
+Goodness of Fit																																																																																																									
+     Degrees of Freedom		9	8	9	8	9	9																																																																																																		
+     R²		0.4772	0.9960	0.7155	0.9860	0.3403	0.7228																																																																																																		
+Constraints																																																																																																									
+     K		K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0	K > 0.0																																																																																																		
+Number of points																																																																																																									
+     Analyzed		12	11	12	11	12	12																																																																																																		

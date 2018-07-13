@@ -9,7 +9,7 @@ import tkinter.filedialog
 protein_data = []
 row_counter = 1
 selection = '2'
-time_points_string = ''
+time_points_string = ""
 unique = "no"
 prism_input = '3'
 
@@ -65,24 +65,15 @@ def get_data():
     var.set('3')
     var2 = StringVar()
     var2.set('no')
-    var3 = StringVar()
-    var3.set('0,0,8,8,8,24,24,24,48,48,48,96,96,168,168')
+    
+    #var3.set('0,0,8,8,24,24,48,48,96,96,168,168')
     labl = Label(data, font = TimesNewRoman,  text = 'Please enter the timepoints separated by commas without any letters, I.e "0,0,8,8,24,....": ',)
     labl.pack(anchor = W)
-
-    def get_points():
-        global time_points_string
-        global prism_input
-        global unique
-        time_points_string = var3.get()
-        prism_input = var.get()
-        unique = var2.get()
-        data.destroy()
-        data.quit()
     
-    textbox = Entry(data, textvariable= var3,  font = TimesNewRoman)
-    textbox.pack(anchor = W)
-
+    #this is the textbox
+    textbox = Text(data, height=1, width=30,  font = TimesNewRoman)
+    textbox.pack(anchor = W)    
+    
     labl2 = Label(data,font = TimesNewRoman,  text = 'Please select which isotopomer you would like to use to calculate the rate constant.')
     labl2.pack(anchor = W)
 
@@ -102,6 +93,17 @@ def get_data():
     
     bttn = Button(data, text= "Continue with Entered Data and Quit ", command = get_points)
     bttn.pack(anchor = W)
+    
+    def get_points():
+        global time_points_string
+        global prism_input
+        global unique
+        time_points_string = textbox.get("1.0", "end-1c")
+        prism_input = var.get()
+        unique = var2.get()
+        data.destroy()
+        data.quit()
+        
     data.mainloop()
     
     
