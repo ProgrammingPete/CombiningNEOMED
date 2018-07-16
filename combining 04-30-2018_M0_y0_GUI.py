@@ -729,7 +729,7 @@ def find_prism():
     found = 0
     for root,dirs,files in os.walk('C:\\'):
         for file in files:
-            if file == 'PrismDemo.exe':
+            if file == 'prism.exe':
                 prism_path = os.path.sep.join([root,file])
                 found = 1
                 print('Prism Found.')
@@ -946,7 +946,7 @@ def create_data_file_all(protein_data, folder_name):
 def prompt_FSR():
     print('\n')
     print('Please make sure the folder path that contains your data does not contain any spaces. I.e C:\Kasumov lab\Andrew\Data_Folder will not work because there is a space in "Kasumov lab".')
-    print('Please enter the path of the folder that contains your files. I.e C:\Kasumov_lab\Andrew\Data_Folder')
+    print('Please enter the path of the folder that contains your RATE CONSTANT files. I.e C:\Kasumov_lab\Andrew\Data_Folder')
     folder_name = input('Folder Path: ').strip()
     folder_name = check_directory(folder_name)
 
@@ -1047,7 +1047,7 @@ def read_data_A4_FSR(file, file_name, file_path, folder_name, user_time_points, 
                         peptide_locations.append(position)
                     else:
                         pass
-            else: #Extracting data for all of the peptides
+            else: #Extracting data for all of the peptides into data_dict
                 row[0] = row[0] + str(rowq_counter)
                 peptides_list.append(row[0].strip())
                 data_dict[row[0]] = []
@@ -1094,7 +1094,7 @@ def read_data_A2_FSR(file, file_name, file_path, folder_name, user_time_points, 
                         peptide_locations.append(position)
                     else:
                         pass
-            else:
+            else: #creation of data dict
                 row[0] = row[0] + str(rowq_counter)
                 peptides_list.append(row[0].strip())
                 data_dict[row[0]] = []
@@ -1128,7 +1128,7 @@ def write_file_FSR_1(file_name, folder_name,time_point_list,peptides_list,peptid
     new_file_name = os.path.sep.join([folder_name, new_file_name]) 
     ws1 = wb.active
     ws1.title = "FSR"
-
+    
     heading1 = ['Peptide','Charge','m/z','N']
     heading2 = ['','M0','M1','MPE M1','Net Lab','BWE','k /hr']
     bwe = bwe.split(',')
@@ -1137,32 +1137,33 @@ def write_file_FSR_1(file_name, folder_name,time_point_list,peptides_list,peptid
     counter_for_rows = 1
     peptides_counter = 0
     zeros = 0
+    #start of the algorithm
     for i in user_time_points:
         if i ==0 or i == '0':
             zeros+=1
         else:
             pass
-    for chart in range(len(peptides_list)):
+    for chart in range(len(peptides_list)):  #each peptide chart
         time_point_list_counter = 0
         data_counter = 0
         counter2 = 1
-        for row in range(counter_for_rows,counter_for_rows + len(time_point_list)+3):
-            if counter2 == 1:
+        for row in range(counter_for_rows,counter_for_rows + len(time_point_list)+3): #timepoint list for peptide
+            if counter2 == 1: #write heading1
                 for column in range(1,len(heading1)+1):
                     cell_name = get_column_letter(column) + str(row)
                     ws1[cell_name] = heading1[column-1]
-            elif counter2 == 2:
+            elif counter2 == 2:  #calculate N and write Peptide name, charge, SeqMass(m/z), N from peptids_dict to temp_list to ws1
                 temp_list = []
                 temp_list.append(peptides_list[peptides_counter])
                 N = calculate_N(peptides_list[peptides_counter])
                 for i in peptides_dict[peptides_list[peptides_counter]]:
                     temp_list.append(i.strip())
                 temp_list.append(N)            
-                for column in range(1,len(temp_list)+1):
+                for column in range(1,len(temp_list)+1): #write temp_list to ws1
                     cell_name = get_column_letter(column) + str(row)
                     ws1[cell_name] = temp_list[column-1]
             elif counter2 == 3:
-                for column in range(1,len(heading2)+1):
+                for column in range(1,len(heading2)+1): #write header2 
                     cell_name = get_column_letter(column) + str(row)
                     ws1[cell_name] = heading2[column-1]
             elif counter2 > 3 and counter2 < (zeros+4):
@@ -1170,16 +1171,18 @@ def write_file_FSR_1(file_name, folder_name,time_point_list,peptides_list,peptid
                     average_location = counter_for_rows
                     temp_list = []
                     temp_list.append(time_point_list[time_point_list_counter])
-                    for i in range(data_counter,data_counter +2):
-                        try:
+                    for i in range(data_counter,data_counter +2): #this will extract instensity values for peptide in data_dict
+                        try:     #get I0, I1  values from data_dict for corresponding peptide
                             temp_list.append(float(data_dict[peptides_list[peptides_counter]][i]))
                         except ValueError:
                             temp_list.append('')
                         data_counter+=1
                     data_counter +=4
+                    #the line below takes M1/(M0 +M1). this example is MPE M1 
                     temp_list.append('=if(and(B' + str(counter_for_rows) + '>0,C' + str(counter_for_rows)+ '>0),C' + str(counter_for_rows)+'/(B'+ str(counter_for_rows)+'+C'+str(counter_for_rows)+'),"")')
+                    #line below takes the average of D4 through D5 which is ????
                     temp_list.append('=average(D'+str(counter_for_rows)+':D'+str(counter_for_rows+ zeros-1)+')')
-                    for column in range(1,len(heading2)-1):
+                    for column in range(1,len(heading2)-1): #write to ws1 this row (temp_list)
                         cell_name = get_column_letter(column) + str(row)
                         ws1[cell_name] = temp_list[column-1]                 
                 else:
