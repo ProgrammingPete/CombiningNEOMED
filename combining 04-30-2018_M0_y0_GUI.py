@@ -729,7 +729,7 @@ def find_prism():
     found = 0
     for root,dirs,files in os.walk('C:\\'):
         for file in files:
-            if file == 'prism.exe':
+            if file == 'PrismDemo.exe':
                 prism_path = os.path.sep.join([root,file])
                 found = 1
                 print('Prism Found.')
@@ -863,7 +863,14 @@ def create_data_file_individual(data_dict, peptides, file_name3, folder_name):
                 else:
                     if peptides[coly].find('Data'):
                         cell_namey = get_column_letter(coly) + str(rowy)
-                        wsy[cell_namey] = data_dict[peptides[coly]][rowy-2]
+                        string_without_chars = data_dict[peptides[coly]][rowy-2].strip('~abcdefghijklmnopqrstuvwxyz')                        
+                        try:
+                            if string_without_chars == '' or string_without_chars == None:
+                                wsy[cell_namey] = ''
+                            else:
+                                wsy[cell_namey] = float(string_without_chars)
+                        except ValueError:
+                            wsy[cell_namey] = string_without_chars
                     else:
                         pass
                         
