@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 SetPath C:\Users\peter\Documents\NEOMED\Combining
 Open onephase.pzf
 SetPath C:/Users/peter/Documents/NEOMED/Combining
 ForEach *Prism.csv
+=======
+SetPath \\jr0dv52\Users\pparianos\CombiningNEOMED
+Open onephase.pzf
+SetPath //jr0dv52/Users/pparianos/CombiningNEOMED/SadHT16_4ppm_3iso_M0Y0
+ForEach *Prism3.csv
+>>>>>>> 2aae2f540ba9053d3fecb47e5513e904e8fd85a1
 OpenOutput %F_Results.txt
 Goto D
 ClearTable
