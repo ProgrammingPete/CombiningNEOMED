@@ -984,7 +984,7 @@ def prompt_FSR():
         print('Please try again.')
         user_time_points = input('Please enter the timepoints separated by commas without any letters, I.e "0,0,8,8,24,....": ').strip()
 
-    print('Please enter the body water enrichment for each timepoint as a percent separated by commas, I.e "0,0,2.3,2.4,3.2,....". Make sure to include 0 for each of your controls.')
+    print('Please enter the body water enrichment percentage for each timepoint as a decimal separated by commas, I.e "0,0,2.3,2.4,3.2,....". Make sure to include 0 for each of your controls.')
     bwe = input('Enter the body water enrichment: ').strip()
     while check_time_points(bwe,folder_name) == False:
         print('\n')
