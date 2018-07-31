@@ -1,7 +1,7 @@
-SetPath C:\Users\pparianos\CombiningNEOMED
+SetPath C:\Users\peter\Documents\NEOMED\Combining
 Open onephase.pzf
-SetPath C:/Users/pparianos/CombiningNEOMED/SadHT16_4ppm_3iso_M0Y0
-ForEach *Prism3.csv
+SetPath C:/Users/peter/Documents/NEOMED/Combining
+ForEach *Prism.csv
 OpenOutput %F_Results.txt
 Goto D
 ClearTable

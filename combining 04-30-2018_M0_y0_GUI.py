@@ -47,9 +47,6 @@ def gui_selection():
     bttn = Button(window, text= "Continue with Selection", command = bttnPressed,font= tkinter.font.Font(family= "Times New Roman", size = 14, weight ='bold'))
     bttn.pack(anchor = W)
 
-
-
-    
     window.mainloop()
 
 def get_dirname():
@@ -1010,8 +1007,8 @@ def read_file_FSR(folder_name, user_time_points, bwe, fsr_selection):
                     if rows_counter == 1:
                         pass
                     elif rows_counter == 2:
-                        rowrow = rowrow.split(',')
-                        if rowrow[0] == 'Peptide':
+                        rowrow = rowrow.split(',') # this is because file is a csv (comma separated values)
+                        if rowrow[0] == 'Peptide': 
                             read_data_A2_FSR(file, file_name, file_path, folder_name, user_time_points, bwe, fsr_selection)
                         else:
                             pass
