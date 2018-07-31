@@ -913,7 +913,6 @@ def prepare_protein_data(file_name3, data_dict, peptides, row_counter):
                 temp_listy.append(data_dict[peptides[x]][2])
         except ValueError:
             temp_listy.append('')
-            
     protein_data.append(temp_listy)
     row_counter +=1
 
@@ -1185,7 +1184,7 @@ def write_file_FSR_1(file_name, folder_name,time_point_list,peptides_list,peptid
                             temp_list.append('')
                         data_counter+=1
                     data_counter +=4
-                    #the line below takes M1/(M0 +M1). this example is MPE M1 
+                    #the line below takes M1/(M0 +M1), the calculation for MPEMi. this example is MPE M1 
                     temp_list.append('=if(and(B' + str(counter_for_rows) + '>0,C' + str(counter_for_rows)+ '>0),C' + str(counter_for_rows)+'/(B'+ str(counter_for_rows)+'+C'+str(counter_for_rows)+'),"")')
                     #line below takes the average of D4 through D5 which is ????
                     temp_list.append('=average(D'+str(counter_for_rows)+':D'+str(counter_for_rows+ zeros-1)+')')
@@ -1729,7 +1728,7 @@ def write_file_FSR_5(file_name, folder_name,time_point_list,peptides_list,peptid
         counter_for_rows +=1
     wb.save(filename = new_file_name)
 
-def calculate_N(sequence):
+def calculate_N(sequence): #hellenstein
     AA = {'A':4,'R':3.43,'N':1.89,'D':1.89,'C':1.62,'E':3.95,'Q':3.95,'G':2.06,'H':2.88,'I':1,'L':0.6,'K':0.54,'M':1.12,'F':0.32,'P':2.59,'S':2.61,'T':0.2,'Y':0.42,'W':0.08,'V':0.56}
     N = 0
     for i in sequence:
